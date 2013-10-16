@@ -1,0 +1,8 @@
+{
+  "name": "d20Mob",
+  "description": "An API for Dungeon Masters",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x"
+  }
+}
