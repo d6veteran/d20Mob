@@ -45,5 +45,3 @@ app.get('/npc/:id', npc.view);
 
 // Encounters
 app.get('/encounter/:id', encounter.view);
-
-

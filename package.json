@@ -10,9 +10,6 @@
   "repository": {
   	"type": "git",
   	"url": "git://github.com/wmerydith/d20Mob",
-  "engines": {
-  	"node": ">=0.6"
-  },
   "keywords": [
   	"api", "dnd", "game"
   ]
