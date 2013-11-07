@@ -4,14 +4,23 @@
   "version": "0.0.1",
   "author": "Will Merydith <will.merydith@gmail.com>",
   "dependencies": {
-    "express": "3.x",
-    "jade": ">=0.30.0"
+    "express": "~3.4.2",
+    "jade": ">=0.30.0",
+    "async": "~0.2.9",
+    "node-uuid": "~1.4.1",
+    "nconf": "~0.6.7",
+    "azure": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "repository": {
-  	"type": "git",
-  	"url": "git://github.com/wmerydith/d20Mob"
+    "type": "git",
+    "url": "git://github.com/wmerydith/d20Mob"
   },
   "keywords": [
-  	"api", "dnd", "game"
+    "api",
+    "dnd",
+    "game"
   ]
 }
