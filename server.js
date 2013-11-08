@@ -16,7 +16,8 @@
 var express = require('express')
   , http = require('http')
   , path = require('path')
-  , azure = require('azure');
+  , azure = require('azure')
+  , site = require('./routes/site');
 
 var app = express();
 
@@ -24,8 +25,8 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.logger('dev;'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-//app.set('views', __dirname + '/views');
-//app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));    
 
@@ -38,3 +39,5 @@ app.use('/json', require('./routes/json'));
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+app.get('/', site.index);

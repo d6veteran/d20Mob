@@ -14,8 +14,7 @@
 // limitations under the License.
 //
 
-var   send = require('./send')
-    , azure = require('azure')
+var azure = require('azure')
     , TableQuery = azure.TableQuery
     , tableName = 'npcdit';
 
